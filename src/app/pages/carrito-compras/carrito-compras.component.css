@@ -1,0 +1,70 @@
+/* Estilos generales para la factura */
+.factura {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.factura-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.factura-fecha,
+.factura-datos {
+    flex: 1;
+}
+
+.factura-fecha p,
+.factura-datos p {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tfoot tr {
+    font-weight: bold;
+}
+
+.table tfoot td {
+    border-top: 2px solid #ddd;
+    padding-top: 10px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+/* Estilos específicos para impresión */
+@media print {
+    .container {
+        width: 100%;
+    }
+
+    .factura {
+        border: none;
+        padding: 0;
+        background: none;
+    }
+
+    .btn-primary {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="container contact-section">
+  <h2 class="text-center mb-4">Contáctanos</h2>
+  <form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+    <div class="mb-3">
+      <label for="Nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="Nombre" name="Nombre" [(ngModel)]="Nombre" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="Mensaje" class="form-label">Mensaje:</label>
+      <textarea id="Mensaje" class="form-control" name="Mensaje" [(ngModel)]="Mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+

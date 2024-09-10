@@ -1,0 +1,50 @@
+<div class="container mt-4">
+    <h2 class="text-center">Factura</h2>
+
+    <div class="factura">
+        <!-- Datos de la factura -->
+        <div class="factura-header">
+            <div class="factura-fecha">
+                <p><strong>Fecha:</strong> {{ currentDate | date:'dd/MM/yyyy' }}</p>
+            </div>
+            <div class="factura-datos">
+                <p><strong>Factura No:</strong> {{ producto.id }}</p>
+                <p><strong>Nombre del Producto:</strong> {{ producto.producto }}</p>
+            </div>
+        </div>
+
+        <!-- Tabla de detalles de la factura -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ producto.producto }}</td>
+                    <td>1</td>
+                    <td>{{ producto.precio | currency }}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="text-right"><strong>Subtotal</strong></td>
+                    <td>{{ producto.precio | currency }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-right"><strong>IVA (12%)</strong></td>
+                    <td>{{ (producto.precio * 0.12) | currency }}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-right"><strong>Total</strong></td>
+                    <td>{{ (producto.precio * 1.12) | currency }}</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button class="btn btn-primary" (click)="imprimirFactura()">Imprimir Factura</button>
+    </div>
+</div>

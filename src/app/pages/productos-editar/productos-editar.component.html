@@ -1,0 +1,38 @@
+<div class="container mt-4">
+  <div class="section">
+    <h2 class="section-title">Editar Producto</h2>
+    <form (ngSubmit)="editar(formulario)" #formulario="ngForm">
+      <div class="mb-3">
+        <label for="id" class="form-label">Ingresar id</label>
+        <input type="text" id="id" name="id" [(ngModel)]="id" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="producto" class="form-label">Ingresar nombre</label>
+        <input type="text" id="producto" name="producto" [(ngModel)]="producto" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="categoria" class="form-label">Ingresar categoria</label>
+        <input type="text" id="categoria" name="categoria" [(ngModel)]="categoria" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="precio" class="form-label">Ingresar precio</label>
+        <input type="text" id="precio" name="precio" [(ngModel)]="precio" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="imagen" class="form-label">Ingresar imagen</label>
+        <input type="text" id="imagen" name="imagen" [(ngModel)]="imagen" class="form-control">
+      </div>
+      
+      <div class="mb-3">
+        <label for="descripcion" class="form-label">Ingresar descripcion</label>
+        <input type="text" id="descripcion" name="descripcion" [(ngModel)]="descripcion" class="form-control">
+      </div>
+      
+      <button class="btn btn-primary" type="submit">Guardar</button>
+    </form>
+  </div>
+</div>

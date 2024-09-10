@@ -1,0 +1,29 @@
+.contact-section {
+  max-width: 600px; /* Limita el ancho máximo */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 20px;
+}
+
+.contact-section h2 {
+  font-size: 2rem; /* Tamaño de fuente para el encabezado */
+}
+
+.contact-section .form-control,
+.contact-section .btn {
+  border-radius: 0.25rem; /* Bordes redondeados suaves */
+}
+
+.contact-section .btn {
+  padding: 0.5rem 1rem; /* Tamaño del botón */
+}
+/* Estilos para el botón primario */
+.btn-primary {
+  background-color: #d9534f;
+  /* Color de botón personalizado */
+  border-color: #d9534f;
+}
+
+.btn-primary:hover {
+  background-color: #c9302c;
+  border-color: #c9302c;
+}

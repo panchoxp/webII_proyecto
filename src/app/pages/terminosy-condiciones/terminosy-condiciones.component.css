@@ -1,0 +1,27 @@
+/* Estilos para la página de "Términos y Condiciones" */
+.terminos-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #d9534f;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}

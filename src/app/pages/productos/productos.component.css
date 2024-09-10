@@ -1,0 +1,128 @@
+/* Contenedor para los filtros */
+.filters-container {
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+/* Estilos de las tarjetas de productos */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Estilos para cada tarjeta de producto */
+.product-card {
+    width: calc(33.333% - 20px);
+    /* Tamaño uniforme para cada tarjeta, ajusta si es necesario */
+    min-height: 400px;
+    /* Define una altura mínima para hacer las tarjetas uniformes */
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    flex-grow: 1;
+    /* Para asegurar que el contenido se ajuste a la tarjeta */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Imagen de producto dentro de la tarjeta */
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Asegura que la imagen cubra el área sin deformarse */
+    border-radius: 8px 8px 0 0;
+}
+
+/* Estilos del contenido de la tarjeta */
+.caption {
+    padding: 10px;
+}
+
+.caption h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.caption p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive: Ajustar el tamaño de las tarjetas en pantallas más pequeñas */
+@media (max-width: 992px) {
+    .product-card {
+        width: calc(50% - 20px);
+        /* Ajusta el ancho de la tarjeta para tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(100% - 20px);
+        /* Ajusta el ancho de la tarjeta para móviles */
+    }
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.cart-button .bi {
+    font-size: 1.5em;
+    /* Tamaño del ícono */
+}
+/* Estilo del botón para redirigir al carrito de compras */
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido dentro del botón */
+    gap: 8px;
+    padding: 10px 20px; /* Ajusta el relleno para un botón más grande */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase; /* Hace que el texto esté en mayúsculas */
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745; /* Color de fondo verde */
+    color: #fff; /* Color del texto blanco */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Añade transiciones suaves para hover */
+}
+
+/* Estilo del botón en estado hover */
+.cart-button:hover {
+    background-color: #218838; /* Color de fondo más oscuro en hover */
+    transform: scale(1.05); /* Agranda ligeramente el botón al pasar el ratón */
+}
+
+/* Estilo del botón en estado activo */
+.cart-button:active {
+    background-color: #1e7e34; /* Color de fondo más oscuro en clic */
+}

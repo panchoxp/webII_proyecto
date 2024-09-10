@@ -1,0 +1,73 @@
+/* Estilos para el carrusel */
+.carousel-item img {
+  object-fit: cover;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para texto */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Estilos para el botón primario */
+.btn-primary {
+  background-color: #d9534f; /* Color de botón personalizado */
+  border-color: #d9534f;
+}
+
+.btn-primary:hover {
+  background-color: #c9302c;
+  border-color: #c9302c;
+}
+
+/* Estilos para la portada */
+.portada {
+  height: 400px; /* Ajusta la altura según lo necesites */
+  background-image: url('https://st4.depositphotos.com/16781356/40357/v/450/depositphotos_403577784-stock-illustration-coffee-logo-design-vector-illustration.jpg'); /* Reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 3rem; /* Ajusta el tamaño del texto según lo necesites */
+}
+
+.btn-light {
+  color: #333; /* Color del texto del botón */
+  background-color: #fff; /* Fondo blanco para el botón */
+  border-color: #ccc; /* Color del borde del botón */
+}
+
+.btn-light:hover {
+  color: #000; /* Color del texto del botón al pasar el ratón */
+  background-color: #e2e6ea; /* Fondo del botón al pasar el ratón */
+}
+
+/* Footer */
+.footer {
+  background-color: #343a40;
+}
+
+.footer .social-icons a {
+  font-size: 1.5rem;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+.footer a:hover {
+  color: #d9534f; /* Cambia el color al pasar el ratón */
+}

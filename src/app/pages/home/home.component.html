@@ -1,0 +1,92 @@
+<!-- Head -->
+<div class="container-fluid">
+    <!-- Portada de la cafetería -->
+    <div class="portada">
+        <div class="overlay">
+            <h1 class="text-center text-white">Mi Cafetería</h1>
+            <!-- Nosotros -->
+            <div class="text-center mt-4">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis sed, perferendis necessitatibus
+                    asperiores itaque provident placeat dolor repellat atque, cum facere aperiam iste quae deserunt,
+                    natus dicta doloremque omnis.</p>
+                <a routerLink="/nosotros" class="btn btn-primary">Mas sobre nosotros</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- carrousel -->
+<div class="container mt-4">
+    <!-- Carrusel de productos -->
+    <div id="productCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- Producto con id 1 -->
+            <div *ngIf="productoId1" class="carousel-item active">
+                <img [src]="productoId1.imagen" alt="Imagen de producto 1" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>{{ productoId1.producto }}</h2>                    
+                    <p>{{ productoId1.descripcion }}</p>
+                </div>
+            </div>
+            <!-- Producto con id 2 -->
+            <div *ngIf="productoId2" class="carousel-item">
+                <img [src]="productoId2.imagen" alt="Imagen de producto 2" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>{{ productoId2.producto }}</h2> 
+                    <p>{{ productoId2.descripcion }}</p>
+                </div>
+            </div>
+            <!-- Producto con id 3 -->
+            <div *ngIf="productoId3" class="carousel-item">
+                <img [src]="productoId3.imagen" alt="Imagen de producto 3" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>{{ productoId3.producto }}</h2> 
+                    <p>{{ productoId3.descripcion }}</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Botón para ver más productos -->
+    <div class="text-center mt-4">
+        <a routerLink="/productos" class="btn btn-primary">Ver más productos</a>
+    </div>
+</div>
+
+<!-- Componente Contactos -->
+<div class="container mt-4">
+    <app-contactos></app-contactos>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Redes Sociales -->
+        <div class="social-icons mb-3">
+            <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <!-- Enlace a Términos y Condiciones -->
+        <div>
+            <a routerLink="/terminos" class="text-white">Términos y Condiciones</a>
+        </div>
+    </div>
+</footer>

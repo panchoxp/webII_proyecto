@@ -1,0 +1,230 @@
+{
+  "users": [
+    {
+      "email": "franciscoA@yop.com",
+      "password": "$2a$10$OaK8Rf/yP3l87TIkB.jjaOdIsG0synKBVlZGPB2dNiLbGN4La/sUS",
+      "id": 1,
+      "role": "Admin"
+    },
+    {
+      "email": "franciscoU@yop.com",
+      "password": "$2a$10$/0S2hk2XLjdi2RO7MGZQ.eXy80rnoNSgmVlNgsY.MDI9wBvxD1Iau",
+      "id": 2,
+      "role": "User"
+    },
+    {
+      "email": "francisco3@yop.com",
+      "password": "$2a$10$4R.z4woxVEdxAy9pWs/qROQ0PpSSCZblbLPGOMaMJErGHAtX1qSla",
+      "role": "User",
+      "id": 3
+    },
+    {
+      "email": "francisco@yop.com",
+      "password": "$2a$10$MEc5ZNUVVAwPPQM3r9pa9uD6ejJlqIkxjcBKkthgHAaoPS43ubVOi",
+      "role": "User",
+      "id": 4
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "producto": "Pastel de Chocolate",
+      "categoria": "Postres",
+      "precio": 200,
+      "imagen": "https://www.aki.com.ec/wp-content/uploads/2021/01/foto-receta-pastel-chocolate.jpg",
+      "descripcion": "Delicioso pastel de chocolate con ganache."
+    },
+    {
+      "id": 2,
+      "producto": "Tarta de Queso",
+      "categoria": "Postres",
+      "precio": 250,
+      "imagen": "https://i.ytimg.com/vi/4iBmo59k8Vc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAM6gychuEZoIww6iJEoDvY2luR0w",
+      "descripcion": "Tarta cremosa con base de galleta."
+    },
+    {
+      "id": 3,
+      "producto": "Brownie",
+      "categoria": "Postres",
+      "precio": 150,
+      "imagen": "https://img.freepik.com/fotos-premium/brownie-casero-servido-dulce-chocolate_6351-1587.jpg",
+      "descripcion": "Brownie de chocolate con nueces."
+    },
+    {
+      "id": 4,
+      "producto": "Croissant",
+      "categoria": "Panadería",
+      "precio": 100,
+      "imagen": "https://img.freepik.com/foto-gratis/croissants-tabla-cortar-madera_1150-28480.jpg",
+      "descripcion": "Croissant recién horneado con mantequilla."
+    },
+    {
+      "id": 5,
+      "producto": "Muffin de Arándano",
+      "categoria": "Panadería",
+      "precio": 120,
+      "imagen": "https://www.splenda.com/wp-content/uploads/2020/05/blueberry-muffin-thumb.jpg",
+      "descripcion": "Muffin esponjoso con arándanos frescos."
+    },
+    {
+      "id": 6,
+      "producto": "Café Espresso",
+      "categoria": "Bebidas",
+      "precio": 90,
+      "imagen": "https://img.freepik.com/foto-gratis/cafe-caliente-taza-crema-sobre-mesa-madera-rustica_123827-26352.jpg",
+      "descripcion": "Café espresso intenso y aromático."
+    },
+    {
+      "id": 7,
+      "producto": "Cappuccino",
+      "categoria": "Bebidas",
+      "precio": 110,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/1024px-Cappuccino_at_Sightglass_Coffee.jpg",
+      "descripcion": "Café con espuma de leche y cacao."
+    },
+    {
+      "id": 8,
+      "producto": "Té Verde",
+      "categoria": "Bebidas",
+      "precio": 80,
+      "imagen": "https://www.lostiempos.com/sites/default/files/styles/noticia_detalle/public/media_imagen/2017/5/6/te2.jpg?itok=GX4JjrTx",
+      "descripcion": "Té verde con un toque de limón."
+    },
+    {
+      "id": 9,
+      "producto": "Limonada",
+      "categoria": "Bebidas",
+      "precio": 70,
+      "imagen": "https://img.freepik.com/foto-gratis/rodajas-frutas-junto-vaso-bebida-hielo-hierbas-mesa_23-2148107706.jpg",
+      "descripcion": "Limonada refrescante con hielo."
+    },
+    {
+      "id": 10,
+      "producto": "Quiche Lorraine",
+      "categoria": "Comidas",
+      "precio": 180,
+      "imagen": "https://media.foodspring.com/magazine/public/uploads/2020/11/protein_quiche_rezept-1195x460.jpg",
+      "descripcion": "Quiche con bacon y queso."
+    },
+    {
+      "id": 11,
+      "producto": "Pan de Chocolate",
+      "categoria": "Panadería",
+      "precio": 120,
+      "imagen": "https://enharinado.com/wp-content/uploads/2022/04/Pan-de-chocolate.jpg",
+      "descripcion": "Pan dulce con trozos de chocolate."
+    },
+    {
+      "id": 12,
+      "producto": "Galletas de Avena",
+      "categoria": "Postres",
+      "precio": 90,
+      "imagen": "https://cdn0.recetasgratis.net/es/posts/3/0/3/galletas_de_avena_faciles_y_rapidas_67303_600.jpg",
+      "descripcion": "Galletas de avena con pasas."
+    },
+    {
+      "id": 13,
+      "producto": "Batido de Fresa",
+      "categoria": "Bebidas",
+      "precio": 130,
+      "imagen": "https://imag.bonviveur.com/batido-de-fresa-y-platano.jpg",
+      "descripcion": "Batido cremoso de fresa con trozos de fruta."
+    },
+    {
+      "id": 14,
+      "producto": "Tarta de Manzana",
+      "categoria": "Postres",
+      "precio": 220,
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Tarte_aux_pommes.jpg/1200px-Tarte_aux_pommes.jpg",
+      "descripcion": "Tarta de manzana con canela."
+    },
+    {
+      "id": 15,
+      "producto": "Bagel con Salmón",
+      "categoria": "Comidas",
+      "precio": 200,
+      "imagen": "https://i.pinimg.com/originals/d3/08/09/d3080950f81b1eb1bce6863042f7bf00.jpg",
+      "descripcion": "Bagel fresco con salmón y queso crema."
+    },
+    {
+      "id": 16,
+      "producto": "Café con Leche",
+      "categoria": "Bebidas",
+      "precio": 100,
+      "imagen": "https://www.elytienda.com/cdn/shop/products/cafe_leche.jpg?v=1706491283",
+      "descripcion": "Café con una generosa cantidad de leche vaporizada."
+    },
+    {
+      "id": 17,
+      "producto": "Churros",
+      "categoria": "Postres",
+      "precio": 140,
+      "imagen": "https://st3.depositphotos.com/14670260/37626/i/450/depositphotos_376267390-stock-photo-traditional-spanish-dessert-churros-sugar.jpg",
+      "descripcion": "Churros crujientes espolvoreados con azúcar."
+    },
+    {
+      "id": 18,
+      "producto": "Mochaccino",
+      "categoria": "Bebidas",
+      "precio": 120,
+      "imagen": "https://media.istockphoto.com/id/681493700/es/foto/frappuccino-en-copa-para-llevar.jpg?s=612x612&w=0&k=20&c=6XGl7zfND6Ox8fqviXGltoqXP5qfn19JmwwYLstHC7c=",
+      "descripcion": "Café con sabor a chocolate y crema batida."
+    },
+    {
+      "id": 19,
+      "producto": "Café Americano",
+      "categoria": "Bebidas",
+      "precio": 90,
+      "imagen": "https://i.pinimg.com/originals/84/8f/93/848f93df53ebb12817346bea375c2e5a.jpg",
+      "descripcion": "Café con un sabor más suave."
+    },
+    {
+      "id": 20,
+      "producto": "Tarta de Zanahoria",
+      "categoria": "Postres",
+      "precio": 260,
+      "imagen": "https://img.freepik.com/foto-gratis/pastel-zanahoria-glaseado-blanco-zanahoria-encima_123827-23482.jpg",
+      "descripcion": "Tarta de zanahoria con glaseado de queso crema."
+    },
+    {
+      "producto": "Pastel de Chocolate2",
+      "categoria": "Postres",
+      "precio": 123,
+      "imagen": "https://www.aki.com.ec/wp-content/uploads/2021/01/foto-receta-pastel-chocolate.jpg",
+      "descripcion": "asdasdsa",
+      "id": 21
+    }
+  ],
+  "contactos": [
+    {
+      "nombre": "francisco",
+      "email": "em1@yop.com",
+      "mensaje": "prueba",
+      "id": 2
+    },
+    {
+      "nombre": "francisco",
+      "email": "em2@yop.com",
+      "mensaje": "ejemplo2",
+      "id": 3
+    },
+    {
+      "nombre": "francisco",
+      "email": "em3@yop.com",
+      "mensaje": "asdasdads",
+      "id": 4
+    },
+    {
+      "nombre": "francisco",
+      "email": "em4@yop.com",
+      "mensaje": "asdasdasd",
+      "id": 5
+    },
+    {
+      "nombre": "francisco",
+      "email": "em@yop.com",
+      "mensaje": "lorem",
+      "id": 6
+    }
+  ]
+}

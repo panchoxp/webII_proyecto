@@ -1,0 +1,75 @@
+<div class="container-fluid mt-4">
+    <div class="row">
+        <!-- Columna de filtros a la izquierda -->
+        <div class="col-md-3">
+            <div class="filters-container">
+                <h3 class="filters-title">Filtros</h3>
+                <div class="form-group">
+                    <label for="categoriaSelect" class="form-label">Filtrar por categoría:</label>
+                    <select id="categoriaSelect" class="form-control" [(ngModel)]="categoriaSeleccionada">
+                        <option value="">Todas</option>
+                        <option value="Postres">Postres</option>
+                        <option value="Panadería">Panadería</option>
+                        <option value="Bebidas">Bebidas</option>
+                        <option value="Comidas">Comidas</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rangoSelect" class="form-label">Filtrar por rango de precio:</label>
+                    <select id="rangoSelect" class="form-control" [(ngModel)]="rangoSeleccionado">
+                        <option value="">Todos</option>
+                        <option value="90-150">90 - 150</option>
+                        <option value="150-250">150 - 250</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna de productos a la derecha -->
+        <div class="col-md-9">
+            <div class="products-container d-flex flex-wrap justify-content-start">
+                <div class="product-card" *ngFor="let item of productosFiltrados">
+                    <div class="thumbnail">
+                        <img [src]="item.imagen" alt="Imagen de producto" class="product-img">
+                        <div class="caption">
+                            <h4>{{ item.producto }}</h4>
+                            <p><strong>Categoria:</strong> {{ item.categoria }}</p>
+                            <p><strong>Precio:</strong> {{ item.precio }}</p>
+                            <p><strong>Descripción:</strong> {{ item.descripcion }}</p>
+                            <button class="btn cart-button" (click)="goToCart(item.id)">
+                                <i class="bi bi-cart"></i> <!-- Ícono de carrito de Bootstrap -->
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center py-4">
+    <div class="container">
+        <!-- Redes Sociales -->
+        <div class="social-icons mb-3">
+            <a href="https://facebook.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <!-- Enlace a Términos y Condiciones -->
+        <div>
+            <a routerLink="/terminos" class="text-white">Términos y Condiciones</a>
+        </div>
+    </div>
+</footer>

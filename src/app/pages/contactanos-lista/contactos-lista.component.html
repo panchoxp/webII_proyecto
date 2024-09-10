@@ -1,0 +1,23 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>comentario</th>
+        <th>mensaje</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contacto of contactos; trackBy: contactos.id">
+        <td>{{ contacto.id }}</td>
+        <td>{{ contacto.nombre }}</td>
+        <td>{{ contacto.email }}</td>
+        <td>{{ contacto.mensaje }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="eliminar(contacto.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
