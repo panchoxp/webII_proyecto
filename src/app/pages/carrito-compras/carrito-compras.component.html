@@ -35,12 +35,12 @@
                     <td>{{ producto.precio | currency }}</td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="text-right"><strong>IVA (12%)</strong></td>
-                    <td>{{ (producto.precio * 0.12) | currency }}</td>
+                    <td colspan="2" class="text-right"><strong>IVA (15%)</strong></td>
+                    <td>{{ (producto.precio * 0.15) | currency }}</td>
                 </tr>
                 <tr>
                     <td colspan="2" class="text-right"><strong>Total</strong></td>
-                    <td>{{ (producto.precio * 1.12) | currency }}</td>
+                    <td>{{ (producto.precio * 1.15) | currency }}</td>
                 </tr>
             </tfoot>
         </table>
