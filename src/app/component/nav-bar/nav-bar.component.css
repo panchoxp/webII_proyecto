@@ -1,65 +1,68 @@
 /* Navbar general */
 .navbar {
-    background-color: #343a40;
-    /* Fondo negro */
-    padding: 15px;
+    background-color: #343a40; /* Fondo oscuro */
+    padding: 15px 20px; /* Espaciado uniforme */
+    border-bottom: 2px solid #d9534f; /* Línea inferior en rojo */
 }
 
 .navbar .nav-link {
-    color: #ffffff;
-    /* Texto blanco */
-    padding: 15px;
-    transition: color 0.3s ease;
+    color: #ffffff; /* Texto blanco */
+    padding: 10px 15px; /* Espaciado uniforme */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
     display: flex;
-    align-items: center;
-    /* Alinea el ícono y el texto en la misma línea */
+    align-items: center; /* Alinea ícono y texto */
     cursor: pointer;
-    user-select: none;
-    /* Evita que el texto sea seleccionable */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
 }
 
 .navbar .nav-link:hover {
-    color: #d9534f;
-    /* Hover en rojo */
-    text-decoration: underline;
+    color: #ffffff; /* Texto blanco en hover */
+    background-color: #495057; /* Fondo gris claro en hover */
+    text-decoration: none; /* Quitar subrayado en hover */
 }
 
 .navbar .nav-link.active {
     font-weight: bold;
-    color: #d9534f;
+    color: #d9534f; /* Texto rojo para el link activo */
+    background-color: #495057; /* Fondo gris claro para el link activo */
 }
 
 /* Ícono de usuario */
 .navbar .nav-link i {
-    font-size: 1.2rem;
-    margin-right: 5px;
-    pointer-events: none;
-    /* Asegura que el ícono no sea interactivo */
+    font-size: 1.2rem; /* Tamaño del ícono */
+    margin-right: 8px; /* Espaciado entre ícono y texto */
+    pointer-events: none; /* Asegura que el ícono no sea interactivo */
 }
 
 /* Estilo del modal */
 .modal-content {
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Bordes redondeados más suaves */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    background-color: #ffffff; /* Fondo blanco */
 }
 
 .modal-header {
-    background-color: #343a40;
-    color: #fff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: #343a40; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    border-top-left-radius: 12px; /* Bordes redondeados */
+    border-top-right-radius: 12px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
 }
 
 .modal-body .form-control {
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 1rem;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño de fuente uniforme */
+    border: 1px solid #ced4da; /* Borde gris claro */
 }
 
 .modal-footer a {
-    color: #d9534f;
+    color: #d9534f; /* Texto rojo */
+    font-weight: bold; /* Texto en negrita */
 }
 
 .modal-footer a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Subrayado en hover */
+    color: #c82333; /* Rojo más oscuro en hover */
 }
